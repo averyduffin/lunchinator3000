@@ -1,0 +1,107 @@
+{
+	"info": {
+		"name": "Luncheonator",
+		"_postman_id": "d9ea0162-6c02-c3c5-0343-4ad4583d342e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /api/create-ballot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"endTime\":\"8/20/18 11:45\",\n    \"voters\":[\n        {\n           \"name\":\"Bob\",\n           \"emailAddress\": \"bob@gmail.com\"\n        },\n        {\n           \"name\":\"Jim\",\n           \"emailAddress\": \"jim@gmail.com\"\n        }\n    ]\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/create-ballot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"create-ballot"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/ballot/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/ballot/813273b0-8d1f-11e8-a089-015757dc205e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ballot",
+						"813273b0-8d1f-11e8-a089-015757dc205e"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST api/vote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/vote?id=4&ballotId=0d1df1a0-8d26-11e8-a676-459a89f39f0b&voterName=Bob&emailAddress=bob@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vote"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4",
+							"equals": true
+						},
+						{
+							"key": "ballotId",
+							"value": "0d1df1a0-8d26-11e8-a676-459a89f39f0b",
+							"equals": true
+						},
+						{
+							"key": "voterName",
+							"value": "Bob",
+							"equals": true
+						},
+						{
+							"key": "emailAddress",
+							"value": "bob@gmail.com",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
