@@ -1,0 +1,19 @@
+{
+  "name": "lunchinator3000",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/averyduffin/lunchinator3000.git"
+  },
+  "author": "Avery Duffin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/averyduffin/lunchinator3000/issues"
+  },
+  "homepage": "https://github.com/averyduffin/lunchinator3000#readme"
+}
