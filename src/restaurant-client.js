@@ -33,7 +33,7 @@ const chooseRandomRestaurants = (restaurants) => {
     });
 };
 
-const normalizeReviews = (reviews) => {
+export const normalizeReviews = (reviews) => {
     let sum = 0;
     let topRating = 0;
     let topReviewer = null;
